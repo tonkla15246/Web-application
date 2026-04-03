@@ -1,0 +1,106 @@
+
+<!doctype html>
+<html>
+<head>
+
+<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+<style>
+    
+/* ===== animation ===== */
+@keyframes scale-up-center {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 50px 70px;
+    background-color: #ad7edd;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #8b6294;
+    transform: scale(1.1);
+}
+
+body {
+    margin: 0;
+}
+
+/* ===== background ===== */
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url("bg2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 0.5;
+    z-index: -1;
+}
+
+a {
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+header {
+    background-color: #ad7edd;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Bungee', sans-serif;
+}
+
+nav {
+    background-color: #8b6294;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Bungee', sans-serif;
+}
+
+
+</style>
+
+<title>LANDOKMAI FAN for website dev education</title>
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<header><strong>LANDOKMAI</strong></header>
+
+<br>
+
+<nav>
+    <a href="nigga.html">HOME</a>
+    <a href="about.html">about landokmai</a>
+    <a href="#">landokmai</a>
+</nav>
+
+<a href="" class="btn">albums</a>
+
+
+
+</body>
+</html>
